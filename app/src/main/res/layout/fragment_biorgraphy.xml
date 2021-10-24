@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgBioHero"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#FFD1A6"
+            app:cardCornerRadius="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtHeroBioName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txtHeroBioRealName"
+                    app:layout_constraintEnd_toStartOf="@+id/imgBioStudio"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="One Punch Man" />
+
+                <TextView
+                    android:id="@+id/txtHeroBioRealName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/txtHeroBioDescription"
+                    app:layout_constraintEnd_toEndOf="@+id/txtHeroBioName"
+                    app:layout_constraintStart_toStartOf="@+id/txtHeroBioName"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHeroBioName"
+                    tools:text="Saitama" />
+
+                <ImageView
+                    android:id="@+id/imgBioStudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/txtHeroBioDescription"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtHeroBioName"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:srcCompat="@drawable/ic_marvel_logo" />
+
+                <TextView
+                    android:id="@+id/txtHeroBioDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHeroBioRealName"
+                    tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum hendrerit rutrum. Aliquam tincidunt efficitur erat, nec venenatis neque elementum at. In sit amet felis id lorem ultricies fringilla sed scelerisque lectus. Praesent id lectus vitae nunc ultricies porta. Aliquam erat volutpat. Aenean at dui sed elit consectetur tempus. Mauris rutrum venenatis ultricies. Cras vel orci purus. Etiam tempor, dolor aliquam finibus porttitor, erat nunc suscipit leo, ac tempor est mauris eu elit. Phasellus egestas, massa in viverra viverra, libero quam laoreet purus, sed lacinia lacus augue a tellus.  Nullam vel ultrices elit. Nunc quis erat sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam in iaculis ligula, eu posuere mauris. Nulla egestas, justo sit amet porttitor sollicitudin, lectus arcu hendrerit orci, eu sollicitudin ex libero non dolor. In molestie vulputate quam. Pellentesque eu leo sit amet quam hendrerit euismod vel nec orci. Ut ullamcorper pulvinar lectus, nec dignissim nulla blandit ac. Donec consectetur porttitor augue at mattis. Phasellus quis hendrerit erat, nec porta magna. Vivamus auctor diam et vulputate auctor. Curabitur elementum gravida odio a scelerisque. Nullam ac convallis risus. Mauris lacinia massa eget mi sagittis, ac semper leo venenatis. Ut dapibus bibendum sem, at ornare arcu convallis in. Donec condimentum mollis tellus vel tristique.  Maecenas urna nulla, lobortis eu lacus vitae, scelerisque tempus odio. Donec porta nunc nec neque lobortis, eget consectetur justo aliquet. Nullam rutrum tristique leo. Pellentesque lacinia, neque vitae facilisis laoreet, mauris nisi fermentum magna, efficitur mattis sapien massa eget enim. Sed tortor dui, elementum sed nisi quis, euismod elementum ex. Proin et nisl quis mauris accumsan molestie nec at ligula. Pellentesque at lorem non libero rutrum bibendum sed venenatis massa.  Sed in vehicula velit. Quisque ipsum risus, tincidunt id turpis vitae, lobortis placerat ipsum. In hac habitasse platea dictumst. Integer nec finibus diam. Nullam pretium elit ligula, sit amet dictum neque tempus quis. Nullam ut est nisi. Praesent elit metus, vestibulum eget pharetra non, mattis vel nunc. Donec ac tristique eros. Nam sit amet ornare lacus. Nam finibus lacus sed semper hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eu nunc ut nisl iaculis efficitur.  Vivamus vestibulum tincidunt lorem vel egestas. Pellentesque ultricies finibus aliquet. Nam faucibus molestie ipsum at finibus. In malesuada augue eu est egestas vehicula. Mauris placerat odio nec aliquam feugiat. Quisque sed condimentum sapien, sit amet cursus leo. Cras facilisis non metus eu finibus. Sed vitae mattis augue. Proin sollicitudin auctor urna vitae pulvinar.  " />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
